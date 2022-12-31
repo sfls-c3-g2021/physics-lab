@@ -119,6 +119,35 @@
                             
                         </li>
                     
+                        <li class="menu-item">
+                            <!-- Menu -->
+                            <a class="has-dropdown" 
+                                href="javascript:void(0);">
+                                
+                                    
+                                        <i class="fa-regular fa-link"></i>
+                                    
+                                    LINKS&nbsp;<i class="fa-solid fa-chevron-down"></i>
+                                
+                            </a>
+                            <!-- Submenu -->
+                            
+                                <ul class="sub-menu">
+                                  
+                                    <li>
+                                      <a target="_blank" rel="noopener" href="https://turtlesim.com/">DOWNLOAD
+                                      </a>
+                                    </li>
+                                  
+                                    <li>
+                                      <a target="_blank" rel="noopener" href="https://github.com/sfls-c3-g2021/physics-lab">CODE
+                                      </a>
+                                    </li>
+                                  
+                                </ul>
+                            
+                        </li>
+                    
                     
                 </ul>
             </div>
@@ -176,6 +205,30 @@
                     </a>
                 </li>
                 <!-- Submenu -->
+                
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class="has-dropdown" 
+                       href="javascript:void(0);">
+                        
+                            
+                                <i class="fa-regular fa-link"></i>
+                            
+                            LINKS&nbsp;<i class="fa-solid fa-chevron-down"></i>
+                        
+                    </a>
+                </li>
+                <!-- Submenu -->
+                          
+                    
+                        <li class="dropdown-item flex-center">
+                            <a class="dropdown-item" target="_blank" rel="noopener" href="https://turtlesim.com/">DOWNLOAD</a>
+                        </li>
+                    
+                        <li class="dropdown-item flex-center">
+                            <a class="dropdown-item" target="_blank" rel="noopener" href="https://github.com/sfls-c3-g2021/physics-lab">CODE</a>
+                        </li>
+                    
                 
             
         </ul>
@@ -249,7 +302,7 @@
             
 
             <div class="article-content markdown-body">
-                <p>Welcome to <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/" >Hexo<i class="fa-solid fa-up-right-from-square"></i></a>! This is your very first post. Check <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/" >documentation<i class="fa-solid fa-up-right-from-square"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html" >troubleshooting<i class="fa-solid fa-up-right-from-square"></i></a> or you can ask me on <a class="link"   target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues" >GitHub<i class="fa-solid fa-up-right-from-square"></i></a>.</p>
+                <p>Welcome to <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/" >Hexo<i class="fa-solid fa-up-right-from-square"></i></a>! This is your very first post. Check <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/" >documentation<i class="fa-solid fa-up-right-from-square"></i></a> for more info. <span id="more"></span>If you get any problems when using Hexo, you can find the answer in <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html" >troubleshooting<i class="fa-solid fa-up-right-from-square"></i></a> or you can ask me on <a class="link"   target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues" >GitHub<i class="fa-solid fa-up-right-from-square"></i></a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
 
 <p>More info: <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html" >Writing<i class="fa-solid fa-up-right-from-square"></i></a></p>
@@ -297,63 +350,6 @@
             
 
             
-                <div class="comment-container">
-                    <div class="comments-container">
-    <div id="comment-anchor"></div>
-    <div class="comment-area-title">
-        <i class="fa-solid fa-comments">&nbsp;Comments</i>
-    </div>
-    
-
-        
-            
-    <div id="gitalk-container"></div>
-    <script data-pjax
-            src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
-    <script data-pjax>
-
-        function loadGitalk() {
-            let __gitalk__pathname = decodeURI(location.pathname);
-            const __gitalk__pathnameLength = __gitalk__pathname.length;
-            const __gitalk__pathnameMaxLength = 50;
-            if (__gitalk__pathnameLength > __gitalk__pathnameMaxLength) {
-                __gitalk__pathname = __gitalk__pathname.substring(0, __gitalk__pathnameMaxLength - 3) + '...';
-            }
-
-            try {
-                Gitalk && new Gitalk({
-                    clientID: '87cefaec681f4c2ba2a8',
-                    clientSecret: '09192338ffc4a62e3f1c2022e57af975580dc562',
-                    repo: 'physics-lab',
-                    owner: 'sfls-c3-g2021',
-                    admin: ['sfls-c3-g2021'],
-                    id: __gitalk__pathname,
-                    language: 'en'
-                }).render('gitalk-container');
-
-            } catch (e) {
-                window.Gitalk = null;
-            }
-        }
-
-        if ('true') {
-            const loadGitalkTimeout = setTimeout(() => {
-                loadGitalk();
-                clearTimeout(loadGitalkTimeout);
-            }, 1000);
-        } else {
-            window.addEventListener('DOMContentLoaded', loadGitalk);
-        }
-    </script>
-
-
-
-        
-    
-</div>
-
-                </div>
-            
         </div>
 
         
@@ -384,7 +380,7 @@
         <div class="copyright-info info-item">
             &copy;
             
-              <span>2022</span>
+              <span>2023</span>
               -
             
             2022&nbsp;<i class="fa-solid fa-heart icon-animate"></i>&nbsp;<a href="/">Physics-Lab-Bromine. All Rights Reserved.</a>
@@ -423,13 +419,11 @@
             odometer_init();
         </script>
         <div id="start_time_div" style="display:none">
-            2022/12/31 18:15:12
+            Sun Jan 01 2023 01:50:46 GMT+0800 (中国标准时间)
         </div>
         
-            <div>
-                Blog up for <span class="odometer" id="runtime_days" ></span> days <span class="odometer" id="runtime_hours"></span> hrs <span class="odometer" id="runtime_minutes"></span> Min <span class="odometer" id="runtime_seconds"></span> Sec
-            </div>
         
+            <div class="customize-info info-item">Blog since 2022-12-31</div>
         
         
     </div>  
@@ -449,10 +443,6 @@
         
 
         <!-- go comment -->
-        
-            <li class="go-comment">
-                <i class="fa-regular fa-comments"></i>
-            </li>
         
     </ul>
 </div>
@@ -526,10 +516,6 @@
     <script src="//evan.beee.top/projects/hexo-theme-redefine/v0.4.4/source/js/lazyload.js"></script>
 
 
-
-    <script src="//evan.beee.top/projects/hexo-theme-redefine/v0.4.4/source/js/runtime.js"></script>
-    <script src="//evan.beee.top/projects/hexo-theme-redefine/v0.4.4/source/js/odometer.min.js"></script>
-    <link rel="stylesheet" href="//evan.beee.top/projects/hexo-theme-redefine/v0.4.4/source/css/odometer-theme-minimal.css">
 
 
 <div class="post-scripts pjax">
